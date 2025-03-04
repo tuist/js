@@ -1,7 +1,11 @@
 {
   "name": "tuist",
   "version": "0.1.0",
+  "bin": {
+    "tuist": "./bin/tuist"
+  },
   "files": [
-    "src/"
+    "src/",
+    "bin/"
   ]
 }
