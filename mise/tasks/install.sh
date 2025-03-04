@@ -2,4 +2,4 @@
 #MISE description="Install the project dependencies"
 
 pnpm install
-mkdir -p native/ && cp $(which tuist) bin/
+mkdir -p bin/ && cp $(which tuist) bin/
