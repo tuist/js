@@ -1,11 +1,31 @@
 {
   "name": "tuist",
   "version": "0.1.0",
+  "description": "Integrate Tuist into JS-based technologies such as React Native.",
   "bin": {
     "tuist": "./bin/tuist"
   },
+  "type": "module",
   "files": [
     "src/",
     "bin/"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tuist/js.git"
+  },
+  "license": "MIT",
+  "preferUnplugged": true,
+  "engines": {
+    "node": ">=18"
+  },
+  "os": [
+    "darwin"
+  ],
+  "cpu": [
+    "arm64"
+  ],
+  "dependencies": {
+    "execa": "^9.5.2"
+  }
 }
