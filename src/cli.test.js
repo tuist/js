@@ -1,7 +1,13 @@
-import test from "node:test";
+import test, { describe } from "node:test";
 import assert from "node:assert";
+import { execCLI } from "./cli.js";
 
-test("synchronous passing test", (t) => {
-  // This test passes because it does not throw an exception.
-  assert.strictEqual(1, 1);
+describe("execCLI", async () => {
+  test("successfully runs the CLI", async (t) => {
+    // Given/when
+    const { stdout } = await execCLI(["version"], { stdout: "pipe" });
+
+    // Then
+    assert.match(stdout, /\d+\.\d+\.\d+/);
+  });
 });
