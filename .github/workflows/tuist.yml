@@ -1,0 +1,29 @@
+name: Tuist
+
+on:
+  push:
+    branches:
+      - main
+  pull_request: {}
+
+env:
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  MISE_EXPERIMENTAL: "1"
+
+concurrency:
+  group: tuist-${{ github.head_ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    name: "Test on ${{ matrix.os }}"
+    timeout-minutes: 10
+    strategy:
+      matrix:
+        os: [macos-15]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: jdx/mise-action@v2
+      - name: Run
+        run: mise run test
