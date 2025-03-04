@@ -7,6 +7,20 @@ This repository contains an NPM package with a two-fold goal:
 1. Allow technologies (e.g. React Native) that use JavaScript packages such as NPM to resolve Tuist through them.
 2. Extend or configure the native CLI to work with technologies like React Native.
 
+## Usage
+
+Add the dependency to your project's `package.json` file:
+
+```json
+{
+  "devDependencies": {
+    "tuist": "4.43.2"
+  }
+}
+```
+
+And run `npm/pnpm/yarn install` to install the package.
+
 ## Development
 
 ### Setup
