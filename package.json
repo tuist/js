@@ -1,9 +1,9 @@
 {
   "name": "tuist",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Integrate Tuist into JS-based technologies such as React Native.",
   "bin": {
-    "tuist": "./bin/tuist"
+    "tuist": "./bin/tuist.js"
   },
   "type": "module",
   "files": [
