@@ -1,5 +1,7 @@
 # Tuist JS
 
+[![Tuist](https://github.com/tuist/js/actions/workflows/tuist.yml/badge.svg)](https://github.com/tuist/js/actions/workflows/tuist.yml)
+
 This repository contains an NPM package with a two-fold goal:
 
 1. Allow technologies (e.g. React Native) that use JavaScript packages such as NPM to resolve Tuist through them.
