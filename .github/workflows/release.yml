@@ -1,21 +1,21 @@
-name: Release
-on:
-  schedule:
-    - cron: "*/15 * * * *"
-  workflow_call: {}
+# name: Release
+# on:
+#   schedule:
+#     - cron: "*/15 * * * *"
+#   workflow_call: {}
 
-env:
-  MISE_EXPERIMENTAL: "1"
-  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+# env:
+#   MISE_EXPERIMENTAL: "1"
+#   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-permissions:
-  contents: write
+# permissions:
+#   contents: write
 
-jobs:
-  npm:
-    name: NPM package
-    runs-on: macos-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: jdx/mise-action@v2
-      - run: mise run release-if-needed
+# jobs:
+#   npm:
+#     name: NPM package
+#     runs-on: macos-latest
+#     steps:
+#       - uses: actions/checkout@v4
+#       - uses: jdx/mise-action@v2
+#       - run: mise run release-if-needed
