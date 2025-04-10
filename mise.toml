@@ -1,7 +1,7 @@
 [tools]
 node = "22.14.0"
 pnpm = "10.8.0"
-tuist = "4.47.0"
+tuist = "4.48.0"
 
 [hooks]
 postinstall = "mise run install"
