@@ -1,6 +1,6 @@
 [tools]
 node = "22.14.0"
-pnpm = "10.8.0"
+pnpm = "10.8.1"
 tuist = "4.48.0"
 
 [hooks]
