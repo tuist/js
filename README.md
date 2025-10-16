@@ -1,7 +1,7 @@
 # Tuist for JavaScript
 
 > [!WARNING]
-> This project is a work in progress and is not yet ready for production use.
+> This project is a work in progress and is not yet ready for production use. While our initial focus is on React Native, we are designing the foundation to be technology agnostic so it should work with other mobile technologies.
 
 An extension of the [Tuist](https://tuist.dev) toolchain to integrate it into JavaScript-based mobile development stacks like React Native.
 
