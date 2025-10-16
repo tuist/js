@@ -1,0 +1,30 @@
+{
+  "name": "tuist",
+  "version": "0.1.0",
+  "description": "Tuist for JS-based stacks",
+  "type": "module",
+  "bin": {
+    "tuist": "./bin/tuist.js"
+  },
+  "files": [
+    "bin",
+    "src"
+  ],
+  "scripts": {
+    "start": "node bin/tuist.js",
+    "test": "node --test test/**/*.test.js"
+  },
+  "dependencies": {
+    "adm-zip": "^0.5.16"
+  },
+  "keywords": [
+    "tuist",
+    "cli",
+    "build-tool"
+  ],
+  "author": "Tuist",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
