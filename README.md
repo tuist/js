@@ -3,7 +3,7 @@
 > [!WARNING]
 > This project is a work in progress and is not yet ready for production use.
 
-An extension of the [Tuist](https://tuist.io) toolchain to integrate it into JavaScript-based mobile development stacks like React Native.
+An extension of the [Tuist](https://tuist.dev) toolchain to integrate it into JavaScript-based mobile development stacks like React Native.
 
 ## Overview
 
@@ -59,19 +59,6 @@ npm test
 ```
 
 The test suite includes both unit tests and integration tests that verify the installation and execution of Tuist.
-
-### Project Structure
-
-```
-.
-├── bin/           # Executable entry point
-├── src/           # Source code
-│   ├── installer.js  # Installation logic
-│   └── paths.js      # XDG path utilities
-└── test/          # Test files
-    ├── installer.test.js
-    └── paths.test.js
-```
 
 ## How It Works
 
